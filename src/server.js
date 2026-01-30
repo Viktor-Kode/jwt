@@ -14,12 +14,12 @@ const PORT = 5000;
 // 4. Fixed syntax for .catch and removed extra arguments in listen
 mongoose.connect(Mongo_URI)
     .then(() => {
-        console.log("✅ Database is running fine");
+        console.log(" Database is running fine");
     })
     .catch((err) => {
-        console.error("❌ Database error:", err.message);
+        console.error("Database error:", err.message);
     });
 
 app.listen(PORT, () => {
-    console.log(`🚀 Running server on port ${PORT}`);
+    console.log(` Running server on port ${PORT}`);
 });
